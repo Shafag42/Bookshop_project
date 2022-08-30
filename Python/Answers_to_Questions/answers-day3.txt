@@ -1,0 +1,6 @@
+Bəzən əksər brauzerlər olaraq standart dəyərləri başqa ölçülərdə formalarda qoya bilirlər.Bu da bizim yazdığımız html kodlarımızdan alınan istəmədiyimiz görünüşlər verə bilir.
+resetin də məqsədi standart sətir,sütün,başlıqların kənarları və şrift ölçüləri və başqa  bütün üslubları sıfırlayır,heç olmamış kimi edir.Beləliklə biz səhifəmizdə heç tətbiq etmədiyimiz üslubları görmürük.
+Əgər biz reset etməsək standart kimi tətbiq etmədiyimiz effeklər,borderlər falan görməli olacağıq. Və biz bu reset.css ilk əvvəl daxil etməliyik,çünki əks halda bizim yazdığımız digər kodlara təsir edə bilər.
+
+Şəkil simvollardan isifadə edərək biz daha  müasir görünüş verərək xüsusi estetiklik yaradıriq sanki. Ölçüləri,effekləri də həmçinin asanlıqla dəyişə bilirik.Beləliklə müxtəlif ölçülü şəkilləri əl ilə bir bir yığmarıq.
+Həmçinin belə olduğu halda daha az html kod yazaraq vaxtımıza da qənaət etmiş oluruq.

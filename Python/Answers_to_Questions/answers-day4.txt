@@ -1,0 +1,3 @@
+Flexbox`dan istifadə edərək biz  ekranın elementlərinin enini,hündürlüyünü,üfüqi və şaquliliyi kimi şeyləri asanlıqla və daha az kod yazaraq təyin edə bilirik,beləliklə də pikselərlə falan bir bir oynayaraq vaxt itirməyə ehtiyyac olmadan ölçüləri rahatlıqla təyin edirik.
+Həmçinin Flexbox`un sintaksisi çox sadə olduğu üçün də kifayət qədər tez bir zamanda öyrənmək olur.Məsələn sadəcə justify-content ilə elementlərin əs ox boyunca necə düzüləcəyini müəyyən edə bilərik.
+

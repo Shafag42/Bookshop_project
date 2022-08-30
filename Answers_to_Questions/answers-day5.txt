@@ -1,0 +1,2 @@
+İndiyə qədər ən maraqlı gələn topic Flexbox mövzusu oldu, baxmayaraq ki yenidir və bir çox brauzerlər dəstəkləmir,buna baxmayaraq Flex özəlliyi mənə bir neçə sadə kod ilə necə bir neçə özəlliyi sadə və qısa yol ilə etməyi göstərdi.
+İndiyə qədər öyrəndiklərimlə məsələn overflow özəlliyi ilə maraqlı görünüş verə bilərəm səhifəyə, displey ilə onların düzlüşünü müəyyən edə position ilə necə yerləşməyini müəyyən edə bilərəm.

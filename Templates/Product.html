@@ -1,0 +1,173 @@
+<html lang="en">
+
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../assets/CSS files/product_style.css"> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+      <div class="container">
+        <div class="col d-flex justify-content-around  ">
+          <h2 class="navbar-brand " style="color: white;">KİTAB MAĞAZASI</h2>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-around " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Ana səhifə</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Haqqımızda</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Kateqoriyalar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ayın kitabı</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  İstifadəçi
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row ">
+        <div class="col-3 d-flex flex-column align-items-center justify-content-center mt-5">
+          <img width="200" height="330" src="{{url_for('static',filename='images/Inkognito.png')}}" alt="inkognito" />
+
+        </div>
+     
+
+        <div class=" col-9 mb-3 mt-3">
+          <h2 class="fw-bold  d-flex justify-content-end">İncognito(beyinin gizli həyatı)</h2>
+          <div class=" d-flex flex-row align-items-center justify-content-end mb-4">
+            <h4 class="text-success fw-bold">12.00 AZN</h4>
+            <small style="font-size: 17px" class="text-danger fw-bold"><del>15.00 AZN</del>
+            </small>
+          </div>
+          <p class="text-end mx-3">
+            Tanınmış nevroloq D.İqlmenin 20-dən çox dilə tərcümə edilən və indidən klassikə çevrilən bu kitabı beyinin
+            sirli dünyasına təcrübələr,elmi biliklər və tarixi faktlar işığında səyahət edir.Kitab tibbi mövzuda olsa
+            da,müxtəlif yazarlıq məharətini və zəngin biliyini birləşdirərək elmi faktları sadə və müqayisəli dillə
+            oxucularına təqdim edir.Müəllif əsər boyu sədaqət geniç qumarbazlara çevrilən parkinson xəstələri, gen-mühit
+            əlaqəsi,"yaxşı" və "pis" gen,şüuraltı və qərarvermə mexanizmi, məsuliyyət anlayışı,beynin insan həyatında
+            rolu kimi bir çox mövzulara toxunur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo minima ut alias dolores. Assumenda alias
+            iusto, mollitia nobis officia obcaecati reiciendis incidunt perferendis explicabo enim, dignissimos
+            blanditiis quod! Molestiae, ipsam.
+          </p>
+          <div class="d-grid gap-1 d-md-flex justify-content-md-end">
+            <button class="btn btn-primary me-md-2" type="button">Səbətə əlavə et</button>
+
+          </div>
+        </div>
+
+      </div>
+      </div>
+      <div class="container">
+      <div class="alert alert-warning d-md-flex justify-content-md-center bordered mt-5" role="alert">
+        Bu kitabdan cəmi 2 ədəd qalıb
+      </div>
+
+      <div class="text-center mt-5 ">
+        <h3>XÜSUSİYYƏTLƏR</h3>
+      </div>
+
+      <table class="table table-striped border-top">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Xüsusiyyət</th>
+            <th scope="col">Açıqlama</th>
+          </tr>
+        </thead>
+        <tbody class="border-top-0">
+          <tr>
+            <th scope="row">1</th>
+            <td>Dil:</td>
+            <td>Azərbaycanca</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Janr:</td>
+            <td>Psixologiya</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Müəllif:</td>
+            <td>David Eagleman</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Nəşriyyat:</td>
+            <td>Qanun Nəşriyyatı</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="text-center mt-5 ">
+        <h3>ŞƏRH YAZ</h3>
+      </div>
+      <form class="mx-2">
+        <div class="mb-3 ">
+          <label for="exampleInputEmail1" class="form-label">Tam Adınız</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ad Soyad">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Hansı dildə oxumusunuz?</label>
+          <select class="form-select" aria-label="Disabled select example" >
+            <option selected>Azərbaycan</option>
+            <option value="1">İngilis</option>
+            <option value="2">Alman</option>
+            <option value="3">Rus</option>
+
+          </select>
+        </div>
+        <div class="form-group mb-3">
+          <label class="form-label mb-2">Qiymətləndirmə:</label>
+          <input type="range" class="custom-range w-100" min="0" max="50" step="1" id="customRange3" />
+        </div>
+        <div class="mb-3">
+          <label for="comment" class="pb-2">Şərhiniz:</label>
+          <textarea class="form-control " rows="5" id="comment" name="text"></textarea>
+        </div>
+
+        <div class="form-check form-switch mb-3">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Bu kitabı oxumusunuzmu?</label>
+        </div>
+        <button type="submit" class="btn btn-primary ">Submit</button>
+      </form>
+    </div>
+
+    </div>
+
+    <div class=" p-3 bg-info text-white text-center py-4" id="footer">
+      <p>Copyright © E-mağaza layihəsi</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>

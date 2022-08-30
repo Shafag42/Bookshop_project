@@ -1,0 +1,9 @@
+CREATE TABLE Book_info(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR(150) NOT NULL,
+author VARCHAR(150) NOT NULL,
+published_at DATE,
+exist BOOLEAN DEFAULT TRUE ,
+genre VARCHAR(50),
+price DECIMAL(4,2) default 10.00
+);

@@ -1,0 +1,4 @@
+Məsələn biz class ilə container funksiyasından istifadə edərək veb səhifəmizin içərisindəki header,navbar, footer  və s. kimi özəllikləri səhifənin ortasında olmasını genişliyini qısıtlayır.Yox əgər bütün tərəflərdən bunu etmək üçün isə container-fluid özəlliyi ilə edə bilərik.
+Ümumiyyətlə grid sistemi  sətir və sütunlar ibarət olur. Sətirlər row ilə yazılır  və səhifədə alt-alta görünürlər.Sətirlərin içərisində isə sütünlar olur.Sütunlar responsive olaraq istifadə tərzimizdən asılı olaraq yan-yana və alt-alta ola bilər.Bootstrap grid istifadə etdiyimiz yeri 12 bərabər hissəyə bölür. Buna uyğun olaraq sütunlarımızın yerini uyğunlaşdırıq.
+Biz  media query ilə Css kodlarını yazaraq müxtəlif ekran ölçülərinə uyğun veb səhifəhimiz fərqli cihazalarda görünüşünü əvəzləyərkən Bootstrap gridin ən böyük özəlliyi kimi onun responsiveolmasıdır ki,  bununla daha tez və rahatlıqla və ən əsası daha az kod yazaraq edə bilirik.
+

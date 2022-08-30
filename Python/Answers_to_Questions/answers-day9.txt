@@ -1,0 +1,4 @@
+1.Əgər Html`i səhifəmizin skeleti, Css`i onun əzələri adlandırırdıqsa Javascripti də səhifəmizin ona hərəkət,dinamiklik  verən hissəsi kimi baxa bilərik. Javascript olmadan onda veb səhifəmiz yalnız şəkil və mətinlərdən ibarət olacaq.
+Javascript`dən öz kodlarımızda istifadəsi isə, əgər onu html işində çağırmaq istəsək <script></script> ilə edirik, ya da başqa bir js faylı yaradıb onun path`ni HTML`ə əlavə etməliyik.
+2.Əlbəttə yaratmaq olar,ancaq sadəcə yuxarıda qeyd etdiyim kimi dinamik olmayacaq veb səhifəmiz.Necə ki əvvəl HTML və CSS i öyrənərkən elə bilirdik bununla hər şeyə edə bilərik, sonra Bootstrap`ı keçəndə gördük bu dah da rahat imiş, lap bunda js də var bununla hər şey edə bilərik, Javascript`ə keçəndə isə 
+dedik hələ biz əslinsə əsas şeyi bilmirikmiş ki))

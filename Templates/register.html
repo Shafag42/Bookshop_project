@@ -1,0 +1,17 @@
+{% extends 'layout.html '%}
+{% from '_formhelpers.html' import render_field %}
+{% block content %}
+    <form action="" method="POST">
+        {{ register_form.csrf_token }}
+        <div class="w-50 mx-auto my-4">
+            {{ render_field(register_form.first_name)}}
+            {{ render_field(register_form.last_name)}}
+            {{ render_field(register_form.email)}}
+            {{ render_field(register_form.username)}}
+            {{ render_field(register_form.password)}}
+            <div class="m-auto">
+                <button type="submit" class="btn btn-primary mb-5">Submit</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

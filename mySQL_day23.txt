@@ -1,0 +1,76 @@
+
+CREATE TABLE Author (
+author_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+author_name VARCHAR(150) NOT NULL,
+author_description text NOT NULL
+);
+
+INSERT INTO Author (author_name,author_description)
+VALUES
+('Fyodor Dostoyevsky','Dostoyevsky is best known for his novella Notes from the Underground and for four long novels, Crime and Punishment, The Idiot, The Possessed (also and more accurately known as The Demons and The Devils), and The Brothers Karamazov. Each of these works is famous for its psychological profundity, and, indeed, Dostoyevsky is commonly regarded as one of the greatest psychologists in the history of literature.'),
+('Marc Levy','Levy was born in Boulogne-Billancourt, Hauts-de-Seine. At the age of 18, he joined the French Red Cross where he spent six years. In parallel, he studied management and computers at Paris-Dauphine University.In 1983, he created a company specializing in computer graphics in France and the United States. In 1989, he lost majority control of the group and resigned, starting again from scratch. He then co-founded an interior design and construction company with two friends; the company would become one of the first office architecture firms in France.'),
+('Gabriel Garcia Marquez','Gabriel Garcia Marquez is a Columbian novelist, screenwriter and journalist, born on 6th March 1927 in a small town called Aracataca, Columbia. He was mainly raised by his grandfather ‘papalelo’ who was a retired army Colonel whom Marquez called his ‘umbilical cord with history and reality’. The Colonel was a big inspiration for Marquez throughout his life. He taught Marquez everything there was to know about politics and helped shape his ideological outlooks. Marquez’s grandmother was also equally involved in his upbringing. He enjoyed her stories about magic and his parent relationship adventures in a deadpan style which was the source of inspiration of Marquez’s most well-known novel ‘One Hundred Years of Solitude’ about thirty years later.'),
+('Jane Austen','It is said that Jane Austen lived a quiet life. Only a few of her manuscripts remain in existence and the majority of her correspondence was either burned or heavily edited by her sister, Cassandra, shortly before she died. As a result, the details that are known about her are rare and inconsistent. What can be surmised through remaining letters and personal acquaintances is that she was a woman of stature, humor and keen intelligence. Family remembrances of Austen portray her in a kind, almost saintly light, but critics who have studied her books and the remnants of her letters believe she was sharper than her family wished the public to think.'),
+('Albert Camus','Albert Camus became known for his political journalism, novels and essays during the 1940s. His best-known works, including The Stranger (1942) and The Plague (1947), are exemplars of absurdism. Camus won the Nobel Prize for Literature in 1957 and died on January 4, 1960, in Burgundy, France.');
+
+
+
+CREATE TABLE Genre (
+genre_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+genre_name VARCHAR(150) NOT NULL
+);
+
+INSERT INTO Genre (genre_name)
+VALUES
+('Drama'),
+('Historical'),
+('Classics');
+
+
+
+CREATE TABLE Lang (
+lang_id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+lang_code VARCHAR(15) NOT NULL,
+lang_name VARCHAR(50) NOT NULL
+);
+
+INSERT INTO Lang(lang_code,lang_name)
+VALUES
+('eng','English'),
+('az','Azerbaijan'),
+('de','German');
+
+
+CREATE TABLE Book_info(
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+title VARCHAR(150) NOT NULL,
+author_ID INT NOT NULL,
+published_at DATE,
+exist BOOLEAN  ,
+genre_ID INT NOT NULL,
+language_ID INT NOT NULL,
+price DECIMAL(4,2),
+foreign key (genre_ID) references Genre(genre_id) on delete cascade,
+foreign key (language_ID ) references Lang(lang_id) on delete cascade,
+foreign key (author_ID) references Author(author_id) on delete cascade
+);
+
+INSERT INTO Book_info (title, author_ID,published_at, exist, genre_ID,language_ID,price)
+VALUES 
+('If Only It Were True',1,'2000-09-07',True,1,1,23.99),
+('Crime and Punishment',2,'1857-07-10',True,2,2,45.00),
+('Pride and Prejudice',3,'1834-06-10',True,3,3,15.00),
+('The Stranger',4,'1942-03-01',False,1,1,28.00),
+('100 years of solitude',5,'1812-08-10',True,2,2,35.99);
+
+
+SELECT Book_info.title, Author.author_name, Book_info.published_at
+FROM Author INNER JOIN Book_info ON Book_info.author_ID=Author.author_id;
+
+SELECT Book_info.title, Genre.genre_name, Book_info.published_at
+FROM Genre INNER JOIN Book_info ON Book_info.genre_ID=Genre.genre_id;
+
+SELECT Book_info.title, Lang.lang_name, Book_info.published_at
+FROM Lang INNER JOIN Book_info ON Book_info.language_ID=Lang.lang_id;
+
+

@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  color: #109e97;
+  background-color: white;
+  font-family: "Lobster";
+  text-align: center;
+  margin-top: 20px;
+  line-height: 10px;
+}
+
+.navigation-menu {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  background-color: #109e97;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+}
+
+nav {
+  flex-grow: 0.5;
+  display: flex;
+  justify-content: center;
+
+}
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+
+.nav-link {
+  list-style-type: none;
+  font-size: 16px;
+  font-family: Roboto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 40px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.content {
+  margin: auto;
+  display: flex;
+  background-image: url("./assets/images/paper_bg.jpg");
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: #109e97;
+  text-align: center;
+  color: white;
+  height: 40px;
+  width: 120px;
+  line-height:40px;
+  text-decoration: none !important;
+}
+
+.main-container {
+  margin: auto;
+  padding-right: 30px;
+}
+
+p {
+  text-align: left;
+  width: 400;
+}
+
+.image-books {
+  padding-right: 100px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.kitablar-name {
+  color: black;
+  align-items: center;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.box-books {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 1200px;
+  width: 770px;
+  align-content: space-around;
+  justify-content: space-evenly;
+  border: 3px dotted #916A6A;
+  text-align: center;
+  flex-flow: row wrap;
+  margin: auto;
+}
+.box-books > div {
+  padding: 40px 30px 20px 30px;
+  border: 2px dotted #109e97;
+  text-align: center;
+}
+.book-1 {
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  height: 10%;
+  background-color: #109e97;
+  color: white;
+  text-align: center;
+}
+
+.social_media {
+  position: fixed;
+  top: 300px;
+  right: 0;
+}
+.icon {
+  text-align: center;
+  padding: 7px;
+  border-radius: 50%;
+}
+.icon:not(:last-child) {
+  border: 1px solid #109e97;
+  background-color: #109e97;
+}
+
+#angle {
+  margin-top: 10px;
+  background-color: gray;
+  border: 1px solid gray;
+ 
+}
+
+a {
+  color: white;
+  ;
+}
+i {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}

@@ -1,0 +1,6 @@
+Bootstrap açıq mənbəli və pulsuz CSS kitbxanasıdır. Bootstrap  ilə bir-bir CSS kodları yazmaq əvəzinə hazır komponentlər verir bizə.Bunlardan istifadə edərək rahatlıqla bütün brauzerlər və ölçülər üçün veb saytlrımızı asanlıqla hazırlaya bilərik.
+Və ən əsas özəlliyi isə təkcə eyni kodları şablon şəkildə yazmaqdan qurtulmaq deyil də həm də bootstrap ilə istənilən ölçülü cihazlar üçün uyğun kod yazmasıdır.Yəni həm  telefonlar, noutbuklar və ya laptoplar və planşetlərin ölçülərinə uyğun bir bir məsələn media query istifadə edərək kod yazmadan avtomatik bütün ölçülü cihazlar üçün uyğun çalışan veb səhifələr yaradır.
+Bootstrap`dan istifadə etmək üçün onun öz saytına daxil olub ya download edirik ya da ordakı müəyyən kodları öz html kodlarımıza əlavə etməklə sonra istifadə edəcəyimiz bootstrap kodlarımızın nəticəsini görə bilərik. Doüload etdikdə isə internet omadıqda belə həmin kodlar bizim kompyuterimizdə olduğu üçün offlayn şəkildə eyni qayda ilə bootstrap`dan istifadə edərik.
+Could you create package like Bootstrap? How?- Bunu indi yox amma bəlkə nə vaxtsa hə))) 
+
+

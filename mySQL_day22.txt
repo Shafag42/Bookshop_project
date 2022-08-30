@@ -1,0 +1,155 @@
+Question_1
+
+INSERT INTO Book_info (title, author,published_at, exist, genre ,price)
+VALUES 
+('If Only It Were True','Marc Levy','2005-09-07',True,'Drama','7'),
+('Crime and Punishment','Fyodor  Dostoyevski','1857-07-10',True,'Klassik','20'),
+('Pride and Prejudice','Jane Austen','1912-06-10',True,'Drama','15'),
+('The Stranger','Albert Camus','1942-03-01',True,'Dedektiv','8'),
+('100 years of solitude','Gabriel Garcia Marquez ','1812-08-10',True,'Klassik','22'),
+('Into the Wild ','Jon krakauer','2003-05-12',False,'Trajedi','18');
+
+---------------------------------------------------------------
+
+Question_2
+
+SELECT title, price FROM Book_info ;
+
+
+----------------------------------------------------------------
+
+Question_3
+
+SELECT title, price FROM Book_info
+WHERE price>10.00 ;
+
+-----------------------------------------------------------------
+
+Question_4
+
+SELECT * FROM Book_info
+WHERE id=1 ;
+
+-------------------------------------------------------------------
+
+Question_5
+
+SELECT * FROM Book_info
+WHERE id in(1,2,3) ;
+
+
+-------------------------------------------------------------------
+
+Question_6
+
+SELECT * FROM Book_info
+WHERE price BETWEEN 5.00 AND 15.00 ;
+
+-------------------------------------------------------------------
+
+Question_7
+
+SELECT * FROM Book_info
+WHERE price>5.00 AND price<15.00 ;
+
+-------------------------------------------------------------------
+
+Question_8
+
+
+SELECT * FROM Book_info
+WHERE price<10.00 OR price=2 ;
+
+-------------------------------------------------------------------
+
+Question_9
+
+
+
+SELECT * FROM Book_info
+WHERE author
+LIKE 'Da%' ;
+
+
+-------------------------------------------------------------------
+
+Question_10
+
+
+SELECT * FROM Book_info
+WHERE author
+LIKE '%ni%' ;
+
+-------------------------------------------------------------------
+
+Question_11
+
+SELECT * FROM Book_info
+WHERE author
+LIKE '_av%' ;
+
+
+
+-------------------------------------------------------------------
+
+Question_12
+
+
+
+SELECT * FROM Book_info
+ORDER BY price ASC ;
+
+
+
+-------------------------------------------------------------------
+
+Question_13
+
+
+
+SELECT * FROM Book_info
+ORDER BY id DESC ;
+
+
+
+
+
+-------------------------------------------------------------------
+
+Question_14
+
+
+UPDATE Book_info
+SET exist= False
+WHERE id = 2;
+
+
+
+-------------------------------------------------------------------
+
+Question_15
+
+
+
+DELETE FROM Book_info WHERE id=3;
+
+
+-------------------------------------------------------------------
+
+Question_16
+
+TRUNCATE TABLE Book_info ;
+
+
+-------------------------------------------------------------------
+
+Question_17
+
+DROP TABLE Book_info ;
+
+
+-------------------------------------------------------------------
+
+Question_18
+
+DROP DATABASE products_db ;
